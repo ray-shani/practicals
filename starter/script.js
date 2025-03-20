@@ -69,18 +69,28 @@ else{
 // Test Again
 const calcAverage=Dolphins=(44+23+71)/3,Koalas=(65+54+49)/3;
 console.log(calcAverage);
-function checkwinner(avgDolphins,avgKoalas){
-  const winners=`Koalas win(${avgDolphins} vs ${avgKoalas})`;
-  return winners;
-}
-const results=winners;
-console.log(results);
+
+
+
+// function checkwinner(avgDolphins,avgKoalas){
+//   const winners=`Koalas win(${avgDolphins} vs ${avgKoalas})`;
+//   return winners;
+// }
+// const results=winners;
+// console.log(results);
 
 
 // Test 4
 const bill= 300;
 const tip=bill<=300 && bill>=50 ? bill*0.15: bill*0.2;
 console.log(`The bill was ${bill} and the tip was ${tip}`)
+const calcTip= function(bill){
+  return bill>=50 && bill<=300 ? bill*0.15: bill*0.2;
+}
+const bills=[125,555,44];
+const tips = [calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
+console.log(bills,tips);
+
 
 // Functions
 function shani(){
@@ -113,5 +123,27 @@ const newAge=birthyear=>2025-birthyear;
 const ageNew=newAge(1997);
 console.log(ageNew);
 
-// Functions calling other functions
+// Arrays
+const food1='chapati';
+const food2='meat-stew';
+const food='kachumbari';
+const meal=['chapati','meat-stew','kachumbari'];
+meal.push('ugali');
+console.log(meal);
+console.log(meal[1]);
+console.log(meal[0]);
+console.log(meal[3]);
+console.log(meal[meal.length-1]);
+console.log(meal.indexOf('meat-stew'));
+console.log(meal.includes('meat-stew'));
  
+// Array dot annotation
+const jonas={
+  firstName:'Jonas',
+  lastName:'Schmedtmann',
+  age:2025-1996,
+  job:'teacher',
+  friends:['Jonas','Peter','Steven',]
+
+};
+console.log(jonas);
