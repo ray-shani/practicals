@@ -66,7 +66,52 @@ else{
   console.log("No-one wins the trophy");
 }
 
+// Test Again
+const calcAverage=Dolphins=(44+23+71)/3,Koalas=(65+54+49)/3;
+console.log(calcAverage);
+function checkwinner(avgDolphins,avgKoalas){
+  const winners=`Koalas win(${avgDolphins} vs ${avgKoalas})`;
+  return winners;
+}
+const results=winners;
+console.log(results);
+
+
 // Test 4
 const bill= 300;
 const tip=bill<=300 && bill>=50 ? bill*0.15: bill*0.2;
 console.log(`The bill was ${bill} and the tip was ${tip}`)
+
+// Functions
+function shani(){
+  console.log("My name is Ray Shani");
+}
+shani();
+shani();
+shani();
+ 
+function fruits(apples,pineapple){
+  const juice=`Juice with ${apples} apples
+  and ${pineapple} pineapple`;
+  return juice;
+}
+const appleJuice=fruits(10,8);
+console.log(appleJuice);
+
+const pineappleJuice=fruits(7,15);
+console.log(pineappleJuice);
+
+// Function declarations and expressions
+function calcAge(birthyear){
+  return 2025-birthyear;
+}
+const age1=calcAge(1996);
+console.log(age1);
+
+// Arrow function
+const newAge=birthyear=>2025-birthyear;
+const ageNew=newAge(1997);
+console.log(ageNew);
+
+// Functions calling other functions
+ 
