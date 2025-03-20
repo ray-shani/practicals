@@ -202,8 +202,17 @@ const jonas2= [
   'Wozza',
   2037-1991,
   'Teacher',
-  ['Jonas','Peter','Steven',]
+  ['Jonas','Peter','Steven',]  
 ];
-for(let i=0; i<5 ;i++){
+for(let i=0; i<jonas2.length ;i++){
   console.log(jonas2[i]);
 }
+
+// Running the loop backwards
+const jonas3= [
+  'Jonas',
+  'Wozza',
+  2037-1991,
+  'Teacher',
+  ['Jonas','Peter','Steven',]  
+];
