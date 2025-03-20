@@ -34,6 +34,34 @@ if(BMIMark>BMIJohn){
   console.log(`Marks BMI ${BMIMark} is higher than Johns ${BMIJohn}`)
 }
 
+const markMiller={
+  fullName:'Mak Miller',
+  mass:'78kg',
+  height:'1.69m',
+}
+function BMI(mass,height){
+  const totalBMI=mass/height**2;
+  return totalBMI;
+}
+const calcBMI=BMI(78,1.69);
+console.log(calcBMI);
+
+const johnSmith={
+  fullName:'John Smith',
+  mass:'92kg',
+  height:'1.95m',
+}
+function BMI(mass,height){
+  const totalBMI=mass/height**2;
+  return totalBMI;
+}
+const calcBMI1=BMI(92,1.95);
+console.log(calcBMI1);
+
+ if(calcBMI>calcBMI1){
+  console.log(`Marks BMI ${calcBMI} is higher than Johns ${calcBMI1}`);
+ }
+
 // TEST THREE
 // const teamDolphins=(96+96+89)/3;
 // const teamKoalas=(96+96+89)/3;
@@ -147,3 +175,35 @@ const jonas={
 
 };
 console.log(jonas);
+console.log(jonas.friends);
+console.log(jonas['job']);
+const nameKey='Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['second' + nameKey]);
+
+// const interestedIn= prompt('What do you want to know about jonas? Choose between his firstName, lastName, age, job, and friends');
+// console.log(interestedIn);
+// if(jonas(interestedIn)){
+//   console.log(jonas[interestedIn]);
+// }
+// else{
+//   console.log('Wrong request!What do you want to know about jonas? Choose between his firstName, lastName, age, job, and friend');
+// }
+console.log(`${jonas.firstName} has ${jonas.friends.length} and his bestfriend is called ${jonas.friends[2]} `);
+
+// The for loop
+for(let num=1; num<=15; num++ ){
+console.log(`We mzee ${num}`);
+}
+
+// Looping arrays
+const jonas2= [
+  'Jonas',
+  'Wozza',
+  2037-1991,
+  'Teacher',
+  ['Jonas','Peter','Steven',]
+];
+for(let i=0; i<5 ;i++){
+  console.log(jonas2[i]);
+}
