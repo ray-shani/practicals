@@ -216,3 +216,20 @@ const jonas3= [
   'Teacher',
   ['Jonas','Peter','Steven',]  
 ];
+for(let i=jonas3.length-1; i>=0; i--){
+  console.log(jonas3[i]);
+}
+for(let excercise=1; excercise<4;excercise++){
+  console.log(`-----------Starting excercise ${excercise}`);
+for(let rep=1; rep<4;rep++){
+console.log(`-----------wozaa ${rep}`);
+}
+}
+
+// The while loop
+let dice= Math.trunc(Math.random()*6) +1;
+while(dice!==6)
+  console.log(`You rolled ${dice}`);
+  dice= Math.trunc(Math.random()*6) +1;
+}
+   
