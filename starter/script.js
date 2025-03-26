@@ -118,8 +118,7 @@ const calcTip= function(bill){
 const bills=[125,555,44];
 const tips = [calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
 console.log(bills,tips);
-
-
+ 
 // Functions
 function shani(){
   console.log("My name is Ray Shani");
@@ -228,8 +227,13 @@ console.log(`-----------wozaa ${rep}`);
 
 // The while loop
 let dice= Math.trunc(Math.random()*6) +1;
-while(dice!==6)
+while(dice!==6){
   console.log(`You rolled ${dice}`);
   dice= Math.trunc(Math.random()*6) +1;
+  if(dice===6){
+    console.log("Loop is about to end......");
+  }
 }
    
+
+// GUESS MY NUMBER DOL
