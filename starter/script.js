@@ -258,3 +258,14 @@ else if (days==="wednesday"||days=="thursday"){
   console.log("wozza wozaa");
 }
 
+// Ternary operators
+let ofAge= 25;
+ofAge>=20 ? console.log("The person can get a driving licence"):
+console.log("Wait for your time to grow up");
+
+// Practicals ternary operators
+const billsNew = 275;
+const tipsNew=(billsNew>=50 && billsNew<=300 ? bill * 0.15 : billsNew*0.2);
+console.log(`The bill was ${billsNew} the tip was ${tipsNew} and the total value was ${billsNew+tipsNew} `);
+
+// Practices on functions
